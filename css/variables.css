@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
 :root {
   --blue-1100: rgba(6, 54, 67, 1);
   --blue-1000: rgba(15, 99, 122, 1);
@@ -13,4 +16,13 @@
 
   --white: rgba(255, 255, 255, 1);
   --black: rgba(0, 0, 0, 1);
+
+  --font-family: 'Poppins', sans-serif;
+  --font-family-alt: 'Open Sans', sans-serif;
+
+  --banner-font-size: 28px;
+  --title-font-size: 24px;
+  --subtitle-font-size: 20px;
+  --text-font-size: 18px;
+  --detail-font-size: 14px;
 }

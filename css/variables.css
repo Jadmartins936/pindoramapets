@@ -20,9 +20,10 @@
   --font-family: 'Poppins', sans-serif;
   --font-family-alt: 'Open Sans', sans-serif;
 
-  --banner-font-size: 28px;
-  --title-font-size: 24px;
-  --subtitle-font-size: 20px;
-  --text-font-size: 18px;
-  --detail-font-size: 14px;
+  --banner-font-size: 1.75rem;
+  --title-font-size: 1.5rem;
+  --subtitle-font-size: 1rem;
+  --text-font-size: 0.9rem;
+  --subtext-font-size: 0.75rem;
+  --detail-font-size: 0.6rem;
 }

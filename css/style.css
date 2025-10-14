@@ -1,16 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
 @import './variables.css';
 @import './reset.css';
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: var(--font-family);
-    background-color: var(--blue-200);
-    color: var(--black);
-    margin: 0;
-    padding: 0;
+  font-family: var(--font-family);
+  background-color: var(--blue-200);
+  color: var(--blue-1100);
+  margin: 0;
+  padding: 0;
 }
 
+.profissionais {
+  background-color: var(--white);
+  width: 100%;
+  margin: 1.25rem auto;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+}
 
+.profissionais-titulo {
+  font-size: var(--title-font-size);
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  color: var(--blue-1100);
+}
+
+.profissionais-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  justify-items: center;
+  gap: 1.5rem;
+}
+
+.profissional-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.profissional-imagem {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 0.1rem solid rgba(6, 54, 67, 0.5);
+  box-shadow: 0rem 0.25rem 0.25rem 0rem rgba(6, 54, 67, 0.2);
+  border-radius: 0.5rem;
+}
+
+.profissional-nome {
+  font-size: var(--subtitle-font-size);
+  font-weight: 500;
+  margin-top: 0.75rem;
+  color: var(--blue-1100);
+}
+
+.profissional-especialidade {
+  font-size: var(--text-font-size);
+  font-weight: 400;
+  color: var(--blue-1100);
+  margin: 0.5rem 0;
+}
+
+@media screen and (min-width: 769px) {
+  :root {
+    --title-font-size: 1.25rem;
+    --subtitle-font-size: 1rem;
+    --text-font-size: 0.9rem;
+  }
+
+  .profissionais {
+    width: 90vw;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  :root {
+    --title-font-size: 1.5rem;
+    --subtitle-font-size: 1.125rem;
+    --text-font-size: 1rem;
+  }
+  
+  .profissionais {
+    width: 70vw;
+  }
+}

@@ -46,8 +46,8 @@ document.addEventListener('DOMContentLoaded', function () {
       listaAvaliacoes.insertAdjacentHTML('beforeend', comentarioCardHtml);
     });
     paginaAtualContainer.textContent = paginaAtual;
-    btnProxima.style.display = paginaAtual < totalPaginas ? 'block' : 'none';
-    btnAnterior.style.display = paginaAtual > 1 ? 'block' : 'none';
+    btnProxima.style.display = paginaAtual < totalPaginas ? 'flex' : 'none';
+    btnAnterior.style.display = paginaAtual > 1 ? 'flex' : 'none';
   }
 
   renderizarAvaliacoes();

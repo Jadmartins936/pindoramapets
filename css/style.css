@@ -92,3 +92,105 @@ body {
     width: 70vw;
   }
 }
+
+.avaliacoes {
+    margin: 1.25rem auto;
+    padding: 3rem;
+}
+
+.avaliacoes-titulo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1.5rem 0;
+}
+
+.avaliacoes-lista {
+    list-style: none;
+}
+
+.comentario-card {
+    display: flex;
+    gap: 1rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+}
+
+.avaliacoes-lista li:last-child {
+    border-bottom: none;
+}
+
+.comentario-autor-imagem {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.comentario-conteudo {
+    flex: 1;
+}
+
+.comentario-autor-nome {
+    font-weight: 400;
+    color: var(--text-color-dark);
+    margin: 0.5rem 0;
+}
+
+.comentario-texto {
+    font-size: 0.95rem;
+    max-width: 650px;
+    color: var(--text-color-light);
+    line-height: 1.6;
+}
+
+.avaliacoes-paginacao {
+    display: flex;
+    justify-content: end;
+    align-items: center ;
+    gap: 16px;
+    margin-top: 1.5rem;
+}
+
+.pagina-id {
+    font-weight: 700;
+}
+
+.avaliacoes-btn-paginacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 1px solid var(--blue-1100);
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color 0.2s;
+    outline: none;
+}
+
+.avaliacoes-btn-paginacao > svg {
+    fill: var(--black);
+}
+
+.avaliacoes-btn-paginacao--anterior {
+    transform: rotate(180deg);    
+}
+
+.avaliacoes-btn-paginacao:hover {
+    background-color: var(--blue-hover-button);
+}
+
+.avaliacoes-btn-paginacao:active {
+    background-color: var(--blue-clicked-button);
+    color: var(--white);
+}
+
+.avaliacoes-btn-paginacao:active > svg {
+    fill: var(--white);
+}
+
+@media screen and (min-width: 1025px) {  
+  .avaliacoes {
+    width: 70vw;
+  }
+}

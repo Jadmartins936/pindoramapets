@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <title>PindoramaPets</title>
 </head>
+
 <body>
   <section class="profissionais">
     <h3 class="profissionais-titulo">Nossos Profissionais</h3>
@@ -32,5 +34,21 @@
       </div>
     </div>
   </section>
+  <section class="avaliacoes" id="avaliacoes">
+    <h2 class="avaliacoes-titulo" id="avaliacoes-titulo">Avaliações</h2>
+    <ul class="avaliacoes-lista" id="avaliacoes-lista"></ul>
+    <div class="avaliacoes-paginas">
+      <span class="avaliacoes-paginacao">
+        <button class="avaliacoes-btn-paginacao avaliacoes-btn-paginacao--anterior" id="btn-paginacao-anterior"><img
+            src="assets/icons/arrow.png" alt="Botão de Navegação para voltar a página anterior"></button>
+        <span class="pagina-id" id="pagina-id">1</span>
+        <button class="avaliacoes-btn-paginacao avaliacoes-btn-paginacao--proxima" id="btn-paginacao-proxima"><img src="assets/icons/arrow.png"
+            alt="Botão de Navegação para avançar a próxima página"></button>
+      </span>
+    </div>
+  </section>
 </body>
+
+<script src="js/avaliacoes.js"></script>
+
 </html>

@@ -1,0 +1,120 @@
+.rodape {
+  background-color: var(--white);
+  color: var(--blue-1100);
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.rodape-links {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  justify-content: space-around;
+  margin: var(--spacing-lg);
+  gap: var(--spacing-lg)
+}
+
+.rodape-link {
+  margin: 0 var(--spacing-sm);
+  text-transform: uppercase;
+  font-size: var(--text-font-size);
+  text-align: start;
+  margin: var(--spacing-lg) 0;
+}
+
+.rodape-link>a {
+  text-decoration: none;
+  color: var(--blue-1100);
+}
+
+.rodape-link--destaque {
+  font-weight: 700;
+}
+
+.rodape-direitos {
+  background-color: var(--blue-1100);
+  padding: var(--spacing-sm-plus);
+}
+
+.rodape-direitos-texto {
+  color: var(--white);
+  font-size: var(--text-font-size);
+  margin: 0;
+  padding: var(--spacing-sm) 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.rodape-logo {
+  display: none;
+}
+
+.rodape-contatos {
+  display: none;
+}
+
+@media  screen and (min-width: 769px) {
+  .rodape-links {
+    justify-content: center;
+    gap: var(--spacing-xl);
+  }
+
+  .rodape-link {
+    font-size: var(--subtitle-font-size);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+.rodape-infos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: var(--spacing-lg) var(--spacing-xl);
+    gap: var(--spacing-md)
+}
+
+  .rodape-logo {
+    display: block;
+    width: 200px;
+    height: 200px;
+  }
+
+  .rodape-link {
+    font-size: var(--subtitle-font-size);
+  }
+
+  .rodape-contatos {
+    display: block;
+    margin-top: var(--spacing-lg);
+  }
+
+  .rodape-contato-titulo {
+    font-size: var(--subtitle-font-size);
+    font-weight: 700;
+    margin: var(--spacing-lg) 0 var(--spacing-md) 0;
+    text-transform: uppercase;
+  }
+
+  .rodape-contatos {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-md);
+  }
+
+  .rodape-icon {
+    width: var(--icon-wrapper-size-sm);
+    height: var(--icon-wrapper-size-sm);
+    background-color: var(--blue-500);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius-circle);
+    padding: var(--spacing-lg);
+  }
+
+  .rodape-icon>img {
+    width: var(--icon-size-sm);
+    height: var(--icon-size-sm);
+  }
+}

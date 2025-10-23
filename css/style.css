@@ -9,6 +9,7 @@
 @import './components/avaliacoes.css';
 @import './components/profissionais.css';
 @import './components/contato.css';
+@import './components/rodape.css';
 
 * {
   box-sizing: border-box;

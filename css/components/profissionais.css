@@ -1,0 +1,101 @@
+.profissionais {
+  width: 100%;
+  margin: var(--spacing-lg) auto;
+  border-radius: var(--border-radius-sm);
+}
+
+.profissionais-titulo {
+  font-size: var(--title-font-size);
+  font-weight: 700;
+  margin-bottom: var(--spacing-lg);
+  color: var(--blue-1100);
+  text-align: center;
+  padding: var(--spacing-xl) 0 var(--spacing-xl) 0;
+}
+
+.profissionais-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  justify-items: center;
+  background-color: var(--white);
+  gap: var(--spacing-xl);
+  padding: var(--spacing-lg); 
+}
+
+.profissional-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  font-family: var(--font-family-alt);
+}
+
+.profissional-imagem {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: var(--border-width-sm) solid var(--blue-1100-a50);
+  box-shadow: var(--shadow-card-image);
+  border-radius: var(--border-radius-sm);
+}
+
+.profissional-nome {
+  font-size: var(--subtitle-font-size);
+  font-weight: 500;
+  margin-top: var(--spacing-sm-plus); 
+  color: var(--blue-1100);
+}
+
+.profissional-especialidade {
+  font-size: var(--text-font-size);
+  font-weight: 400;
+  color: var(--blue-1100);
+  margin: var(--spacing-sm) 0;
+}
+
+@media screen and (min-width: 769px) {
+  .profissionais {
+    width: 90vw;
+  }
+
+  .profissionais-titulo {
+    font-size: 1.25rem;
+  }
+
+  .profissional-nome {
+    font-size: 1rem;
+  }
+
+  .profissional-especialidade {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .profissionais {
+    background-color: var(--white);
+    width: 70vw;
+    max-width: 1200px;
+    box-shadow: var(--shadow-container);
+  }
+
+  .profissionais-titulo {
+    font-size: 1.5rem;
+    margin: 0 0 0 var(--spacing-xxl); 
+    text-align: start;
+    padding: var(--spacing-xxxl) 0 var(--spacing-md) 0; 
+  }
+
+  .profissional-nome {
+    font-size: 1.125rem;
+  }
+
+  .profissional-especialidade {
+    font-size: 1rem;
+  }
+
+  .profissionais-container {
+    background-color: transparent;
+  }
+}

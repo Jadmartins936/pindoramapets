@@ -28,22 +28,22 @@ document.addEventListener('DOMContentLoaded', function () {
     const avaliacoesPagina = avaliacoes.slice(inicio, fim);
     tituloAvaliacoes.textContent = totalAvaliacoes > 1 ? `Avaliações (${totalAvaliacoes})` : `Avaliação (${totalAvaliacoes})`;
 
-    avaliacoesPagina.forEach(comentario => {
+    avaliacoesPagina.forEach(avaliacao => {
       const li = document.createElement('li');
-      li.className = 'comentario';
-      const estrelasHtml = '⭐'.repeat(comentario.estrelas);
+      li.className = 'avaliacao';
+      const estrelasHtml = '⭐'.repeat(avaliacao.estrelas);
 
-      const comentarioCardHtml = `
-                <li class="comentario-card">
-                    <img src="${comentario.imagem}" alt="Foto de ${comentario.nome}" class="comentario-autor-imagem">
-                    <div class="comentario-conteudo">
-                        <div class="comentario-estrelas">${estrelasHtml}</div>
-                        <h3 class="comentario-autor-nome">${comentario.nome}</h3>
-                        <p class="comentario-texto">${comentario.texto}</p>
+      const avaliacaoCardHtml = `
+                <li class="avaliacao-card">
+                    <img src="${avaliacao.imagem}" alt="Foto de ${avaliacao.nome}" class="avaliacao-autor-imagem">
+                    <div class="avaliacao-conteudo">
+                        <div class="avaliacao-estrelas">${estrelasHtml}</div>
+                        <h3 class="avaliacao-autor-nome">${avaliacao.nome}</h3>
+                        <p class="avaliacao-texto">${avaliacao.texto}</p>
                     </div>
                 </li>
             `;
-      listaAvaliacoes.insertAdjacentHTML('beforeend', comentarioCardHtml);
+      listaAvaliacoes.insertAdjacentHTML('beforeend', avaliacaoCardHtml);
     });
     paginaAtualContainer.textContent = paginaAtual;
     btnProxima.style.display = paginaAtual < totalPaginas ? 'flex' : 'none';

@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 
-@import './reset.css';
+@import "./reset.css";
 
-@import './variables.css';
+@import "./variables.css";
 
-@import './components/avaliacoes.css';
-@import './components/profissionais.css';
-@import './components/contato.css';
-@import './components/rodape.css';
+@import "./components/menu-superior.css";
+@import "./components/banner-central.css";
+@import "./components/avaliacoes.css";
+@import "./components/profissionais.css";
+@import "./components/contato.css";
+@import "./components/rodape.css";
 
 * {
   box-sizing: border-box;

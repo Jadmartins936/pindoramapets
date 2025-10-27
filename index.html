@@ -8,7 +8,57 @@
   <title>PindoramaPets</title>
 </head>
 
+
 <body>
+  <header>
+  <!--menu-desktop-->
+  <nav>
+    <div id="menu-desktop">
+      <ul id="menu-icones-esquerda">
+        <li><a href=""><img src="assets/logos/logo-menu.png" alt="logo de um cachorro"></a></li>
+        <li id="menu-icones-li-titulo">PINDORAMA PETS</li>
+      </ul>
+      <ul id="menu-links-direita">
+        <li><a href="">Início</a></li>
+        <li><a href="">Serviços</a></li>
+        <li><a href="">Sobre nós</a></li>
+        <li><a href="">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- menu-mobile-->
+<div id="menu-mobile">
+  <div id="menu-mobile-conteudo">
+    <div id="menu-mobile-topo">
+      <button id="menu-btn" type="button">
+      <img src="./assets/icons/menu.png" alt="Abrir menu">
+    </button>
+      <img id="logo-cachorro" src="assets/logos/logo02.png" alt="logo de um cachorro">
+    </div>
+
+    <!-- links-->
+    <div id="menu-mobile-links">
+      <a href="#">Início</a>
+      <a href="#">Serviços</a>
+      <a href="#">Contato</a>
+    </div>
+
+  </div>
+</div>
+
+
+
+  <div id="banner-central">
+    <div id="elementos-esquerda">
+      <h2>Cuidando do Seu Pet com Profissionalismo e Carinho</h2>
+      <button>Entre em contato</button>
+    </div>
+    <div id="elementos-direita">
+      <img id="riscos" src="./assets/imgs/vetorialdoanimais.png" alt="riscos diagonais azul">
+      <img id="animais" src="./assets/imgs/animais2.png" alt="imagem de gatos e cachorros lado a lado">
+    </div>
+  </div>
   <section class="profissionais">
     <h3 class="profissionais-titulo">Nossos Profissionais</h3>
     <div class="profissionais-container">
@@ -165,7 +215,14 @@
     </div>
   </footer>
 </body>
+<script>
+  const menuMobile = document.getElementById('menu-mobile');
+  const menuBtn = document.getElementById('menu-btn');
 
+  menuBtn.addEventListener('click', () => {
+    menuMobile.classList.toggle('active');
+  });
+</script>
 <script src="js/avaliacoes.js"></script>
 
 </html>

@@ -1,0 +1,71 @@
+#banner-central{
+    display: flex;
+    background-color: var(--white);
+    border-radius: 16px;
+    width: 80%;
+    height: 356px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+#elementos-esquerda{
+    width: 40%;
+    margin-left: 64px;
+    flex-direction: column;
+    height: 106px;
+    z-index: 1;
+    margin-top: 40px;
+    position: absolute;
+}
+
+#banner-central > #elementos-esquerda > h2{
+    font-weight: bolder;
+    font-size: 24px;
+    width: 80%;
+    margin: 20px;
+    
+}
+
+#banner-central > #elementos-esquerda > button{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    margin: 40px 20px;
+    font-weight: 500;
+    font-family: var(--font-family);
+    font-size: 16px;
+    background-color: var(--blue-1000);
+    border: none;
+    padding: 16px 8px;
+    color: var(--white);
+    border-radius: 8px;
+}
+
+#elementos-direita{
+    margin-left: auto;
+    display: flex;
+    justify-content:right;
+    margin: 40px 0px;
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+#riscos{
+    position: relative;
+    margin-left: auto;
+    display: flex;
+    justify-content: right;
+    width: 15%;
+    height: 80%;
+    z-index: 1;
+}
+#animais{
+    width: 60%;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: 40px;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+
+}

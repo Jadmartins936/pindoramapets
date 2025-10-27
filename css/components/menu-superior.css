@@ -1,0 +1,131 @@
+nav {
+  background-color: var(--fundo-menu);
+  border-bottom: 1px solid rgba(85, 85, 85, 0.1);
+}
+
+/* menu-desktop*/
+
+#menu-desktop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* elementos da parte esquerda do menu*/
+#menu-icones-esquerda {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin-left: 154px;
+}
+
+#menu-icones-esquerda > li > a > img {
+  height: 58px;
+}
+
+#menu-icones-li-titulo {
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  height: 96px;
+  margin: 0 0 0 10px;
+}
+
+/* elementos da parte direita do menu*/
+#menu-links-direita {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 50%;
+  margin-right: 154px;
+}
+
+#menu-links-direita > li {
+  color: var(--blue-1100);
+  margin: 12px;
+}
+
+#menu-links-direita > li > a {
+    text-decoration: none;
+}
+
+
+/* configuração css do menu mobile*/
+#menu-mobile {
+  background-color: var(--fundo-menu, #6200ea);
+  color: white;
+  padding: 10px;
+  display: none; /* escondido por padrão (pra desktop) */
+}
+
+#menu-mobile-conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  
+}
+
+/* container do topo: botão e logo lado a lado */
+#menu-mobile-topo {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  
+}
+
+#menu-btn {
+  z-index: 2;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+#logo-cachorro{
+  position: absolute;
+  vertical-align: middle;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20%;
+  margin: 10px 0;
+}
+
+#menu-btn img {
+  width: 32px;
+  height: 32px;
+}
+
+/* links ficam escondidos inicialmente */
+#menu-mobile-links {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  margin-top: 10px; /* separação entre logo e links */
+}
+
+#menu-mobile-links a {
+  color: var(--blue-1100);
+  text-decoration: none;
+  margin: 10px;
+}
+
+/* quando o menu é ativado */
+#menu-mobile.active #menu-mobile-links {
+  display: flex;
+}
+
+/* Adaptação do menu para telas inferiores a 900px*/
+@media (max-width: 900px) {
+  #menu-desktop {
+    display: none;
+  }
+  #menu-mobile {
+    display: block;
+  }
+}

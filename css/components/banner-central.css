@@ -1,4 +1,4 @@
-#banner-central{
+#banner-central-desktop{
     display: flex;
     background-color: var(--white);
     border-radius: 16px;
@@ -18,7 +18,7 @@
     position: absolute;
 }
 
-#banner-central > #elementos-esquerda > h2{
+#banner-central-desktop > #elementos-esquerda > h2{
     font-weight: bolder;
     font-size: 24px;
     width: 80%;
@@ -26,12 +26,12 @@
     
 }
 
-#banner-central > #elementos-esquerda > button{
+#banner-central-desktop > #elementos-esquerda > button{
     width: 40%;
     display: flex;
     justify-content: center;
     margin: 40px 20px;
-    font-weight: 500;
+    font-weight: 700;
     font-family: var(--font-family);
     font-size: 16px;
     background-color: var(--blue-1000);
@@ -69,3 +69,69 @@
     justify-content: flex-end;
 
 }
+
+/* banner mobile escondido por padrão */
+#banner-central-mobile {
+  display: none;
+}
+#btn-contato{
+    display: none;
+}
+
+/* Adaptação do menu para telas inferiores a 900px*/
+@media (max-width: 900px) {
+  /* Esconde desktop, mostra mobile */
+  #banner-central-desktop
+ {
+    display: none;
+  }
+
+
+  #banner-central-mobile{
+    display: flex;
+    background-image: url('/assets/imgs/circulo-background.png');
+    background-size: contain;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+    border-radius: 16px;
+    width: 80%;
+    height: 280px;
+    margin: auto;
+    margin-top: 40px;
+    position: relative;
+  }
+  #conteudo-mobile{
+    z-index: 1;
+  }
+  #conteudo-mobile > h2{
+    font-weight: bolder;
+    font-size: 24px;
+    width: 80%;
+    margin: 20px;
+}
+
+#banner-central-mobile > img{
+    right: -10;
+    bottom: 20px;
+    z-index: 0;
+    width: 100%;
+}
+#btn-contato{
+    display: block;
+}
+
+#contato{
+    width: 40%;
+    padding: 8px 10px;
+    display: flex;
+    margin: auto;
+    border-radius: 6px;
+    justify-content: center;
+    margin-top: 40px;
+    border: none;
+    font-family: var(--font-family);
+    background-color: var(--blue-1000);
+    color: var(--white);
+}
+}
+

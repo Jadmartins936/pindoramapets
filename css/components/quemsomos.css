@@ -1,0 +1,156 @@
+#quem-somos{
+    background-color: var(--blue-400);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-image: url("/assets/imgs/fundo-animal.png");
+    background-size: cover;
+}
+#conteudo-esquerda, #conteudo-esquerda2{
+    width: 20%;   
+}
+#conteudo-esquerda > img{
+    width: 100%;
+    height: 100%; 
+}
+
+#conteudo-direita, #conteudo-direita2{
+    width:60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 60px 0 60px;
+}
+#conteudo-direita > h3{
+    margin-bottom: 30px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: var(--font-family);
+}
+#conteudo-direita > p{
+
+    font-family: var(--font-family-text);
+}
+#quem-somos2{
+    background-color: var(--blue-600);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-image: url("/assets/imgs/fundo-animal.png");
+    background-size: cover;
+}
+
+#conteudo-esquerda2 > h3{
+    font-weight: 700;
+    font-size: 18px;
+    font-family: var(--font-family);
+
+}
+
+#conteudo-esquerda2{
+padding: 30px 30px;
+}
+
+
+#conteudo-esquerda2 > img{
+    border-radius: 8px;
+    margin-top: 20px;
+}
+#quem-somos3{
+    background-color: var(--blue-400);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-image: url("/assets/imgs/fundo-animal.png");
+    background-size: cover;
+    margin-bottom: 60px;
+}
+#conteudo-esquerda3{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 60%;
+}
+#conteudo-esquerda3 > p{  
+    width: 80%;
+}
+#conteudo-direita3 > img{
+    margin: 40px;
+    border-radius: 8px;
+}
+#banner-mobile{
+    display: none;
+}
+@media (max-width:900px){
+    #banner-desktop, #quem-somos{
+        display: none;
+    }
+    #banner-mobile{
+        display: block;
+    }
+        #banner-mobile1 > h3{
+                font-weight: 700;
+                font-size: 18px;
+                font-family: var(--font-family);
+                margin-bottom: 20px;
+    }
+    #banner-mobile1{
+        background-color: var(--blue-400);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        background-image: url("/assets/imgs/fundo-animal.png");
+    }
+
+    #banner-mobile1 > p{
+            width: 80%;
+            margin: 20px;
+            text-align: center;
+    }
+    #banner-mobile2{
+        background-color: var(--blue-600);
+        padding: 20px 20px 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        background-image: url("/assets/imgs/fundo-animal.png");
+    }
+            #banner-mobile2 > h3{
+                font-weight: 700;
+                font-size: 18px;
+                font-family: var(--font-family);
+                margin-bottom: 20px;
+    }
+        #banner-mobile2 > p{
+            width: 80%;
+            margin: 20px;
+            text-align: center;
+    }
+        #banner-mobile2 > button{
+            font-weight: 600;
+            font-family: var(--font-family);
+            font-size: 16px;
+            background-color: var(--blue-1000);
+            border: none;
+            padding: 16px 20px;
+            color: var(--white);
+            border-radius: 8px;
+            width: 60%;
+            margin-bottom: 30px;
+    }
+            #banner-mobile2 > img{
+            bottom: 0;
+            display: flex;
+            margin-left: auto;
+            justify-content: flex-end;
+            margin-right: 60px;
+    }
+}
+

@@ -11,54 +11,129 @@
 
 <body>
   <header>
-  <!--menu-desktop-->
-  <nav>
-    <div id="menu-desktop">
-      <ul id="menu-icones-esquerda">
-        <li><a href=""><img src="assets/logos/logo-menu.png" alt="logo de um cachorro"></a></li>
-        <li id="menu-icones-li-titulo">PINDORAMA PETS</li>
-      </ul>
-      <ul id="menu-links-direita">
-        <li><a href="">Início</a></li>
-        <li><a href="">Serviços</a></li>
-        <li><a href="">Sobre nós</a></li>
-        <li><a href="">Contato</a></li>
-      </ul>
-    </div>
-  </nav>
+    <!--menu-desktop-->
+    <nav>
+      <div id="menu-desktop">
+        <ul id="menu-icones-esquerda">
+          <li><a href=""><img src="assets/logos/logo-menu.png" alt="logo de um cachorro"></a></li>
+          <li id="menu-icones-li-titulo">PINDORAMA PETS</li>
+        </ul>
+        <ul id="menu-links-direita">
+          <li><a href="">Início</a></li>
+          <li><a href="">Serviços</a></li>
+          <li><a href="">Sobre nós</a></li>
+          <li><a href="">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
 
-  <!-- menu-mobile-->
-<div id="menu-mobile">
-  <div id="menu-mobile-conteudo">
-    <div id="menu-mobile-topo">
-      <button id="menu-btn" type="button">
-      <img src="./assets/icons/menu.png" alt="Abrir menu">
-    </button>
-      <img id="logo-cachorro" src="assets/logos/logo02.png" alt="logo de um cachorro">
+    <!-- menu-mobile-->
+      <div id="menu-mobile">
+      <div id="menu-mobile-conteudo">
+        <div id="menu-mobile-topo">
+          <button id="menu-btn" type="button">
+        <img src="./assets/icons/menu.png" alt="Abrir menu">
+          </button>
+        <img id="logo-cachorro" src="assets/logos/logo02.png" alt="logo de um cachorro">
+      </div>
+        <div id="menu-mobile-links">
+        <a href="#">Início</a>
+        <a href="#">Serviços</a>
+        <a href="#">Contato</a>
+      </div>
+    </div>
+  </div>
+  </header>
+
+   <!--Banner central para desktop-->
+    <div id="banner-central-desktop">
+      <div id="elementos-esquerda">
+        <h2>Cuidando do Seu Pet com Profissionalismo e Carinho</h2>
+        <button>Entre em contato</button>
+      </div>
+      <div id="elementos-direita">
+        <img id="riscos" src="./assets/imgs/vetorialdoanimais.png" alt="riscos diagonais azul">
+        <img id="animais" src="./assets/imgs/animais2.png" alt="imagem de gatos e cachorros lado a lado">
+      </div>
     </div>
 
-    <!-- links-->
-    <div id="menu-mobile-links">
-      <a href="#">Início</a>
-      <a href="#">Serviços</a>
-      <a href="#">Contato</a>
+    <!--Banner central para mobile-->
+    <div id="banner-central-mobile">
+    <div id="conteudo-mobile">
+      <h2>Cuidamos do seu animal com muito amor</h2>
+    </div>
+    <img id="animais" src="./assets/imgs/animais2.png" alt="imagem de gatos e cachorros lado a lado">
+    </div>
+    <div id="btn-contato">
+      <button id="contato">Entre em contato</button>
     </div>
 
+    <!--Carrossel de imagens-->
+   <div class="carousel">
+  <div class="slides">
+    <div class="slide"><a href=""><img src="assets/imgs/banner-vacinacao.png" alt="Slide 1" ></a></div>
+    <div class="slide"><a href="https://www.youtube.com/watch?v=J6MCq2IcKPQ"><img src="assets/imgs/banner-adocao.png" alt="Slide 2"></a></div>
+    <div class="slide"><a href=""><img src="assets/imgs/banner-banho.png" alt="Slide 3"></a></div>
+  </div>
+
+  <button class="prev">&#10094;</button>
+  <button class="next">&#10095;</button>
+
+  <div class="dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
   </div>
 </div>
-
-
-
-  <div id="banner-central">
-    <div id="elementos-esquerda">
-      <h2>Cuidando do Seu Pet com Profissionalismo e Carinho</h2>
-      <button>Entre em contato</button>
+  <!--banner secundarios com as informações para desktop-->
+  <div id="banner-desktop">
+  <div id="quem-somos">
+    <div id="conteudo-esquerda">
+      <img src="assets/logos/logo01.png" alt="logo de cachorro com a legenda pindorama">
     </div>
-    <div id="elementos-direita">
-      <img id="riscos" src="./assets/imgs/vetorialdoanimais.png" alt="riscos diagonais azul">
-      <img id="animais" src="./assets/imgs/animais2.png" alt="imagem de gatos e cachorros lado a lado">
+    <div id="conteudo-direita">
+    <h3>Quem somos?</h3>
+    <p>Nossa clínica veterinária é comprometida com o cuidado e bem-estar de cada pet, com uma equipe dedicada e instalações modernas, buscamos garantir saúde e conforto em cada atendimento. Cuidamos do seu animalzinho como se fosse nosso!</p>
     </div>
   </div>
+
+    <div id="quem-somos2">
+    <div id="conteudo-esquerda2">
+      <h3>Nossos serviços</h3>
+      <img src="assets/imgs/servicos01.jpg" alt="medica veterinaria examinando gato" width="200">
+    </div>
+    <div id="conteudo-direita2">
+      <p>Na nossa clínica veterinária, cada consulta é realizada com dedicação e atenção aos detalhes, garantindo o melhor cuidado para o seu pet. Contamos com uma equipe experiente e atualizada para oferecer diagnósticos precisos e tratamentos eficazes. </p>
+    </div>
+  </div>
+
+    <div id="quem-somos3">
+    <div id="conteudo-esquerda3">
+      <p>Nós cuidamos do seu pet com o carinho e respeito que ele merece. Nossa equipe dedica atenção a cada detalhe, proporcionando um ambiente acolhedor e seguro para que seu animalzinho se sinta em casa. </p>
+    </div>
+    <div id="conteudo-direita3">
+      <img src="assets/imgs/servicos02.jpg" alt="foto de caachorro feliz ao ser atendido por veterinário" width="200">
+    </div>
+  </div>
+  </div>
+
+  <!--banner secundarios com as informações para mobile-->
+  <div id="banner-mobile">
+  <div id="banner-mobile1">
+    <h3>Quem somos?</h3>
+    <img src="assets/logos/logo.png" alt="logo de cachorro">
+    <p>Nossa clínica veterinária é comprometida com o cuidado e bem-estar de cada pet, com uma equipe dedicada e instalações modernas, buscamos garantir saúde e conforto em cada atendimento. Cuidamos do seu animalzinho como se fosse nosso!</p>
+  </div>
+
+  <div id="banner-mobile2">
+    <h3>Nossos serviços visam o cuidado do seu pet </h3>
+    <p>Na nossa clínica veterinária, cada consulta é realizada com dedicação e atenção aos detalhes, garantindo o melhor cuidado para o seu pet.</p>
+    <button>Agende uma consulta</button>
+    <img src="assets/imgs/gatoFormato.png" alt="imagem de um gato vetorial com a patinha esquerda pra cima indicando o botão de agendamento.">
+  </div>
+  </div>
+
+
   <section class="profissionais">
     <h3 class="profissionais-titulo">Nossos Profissionais</h3>
     <div class="profissionais-container">
@@ -215,14 +290,8 @@
     </div>
   </footer>
 </body>
-<script>
-  const menuMobile = document.getElementById('menu-mobile');
-  const menuBtn = document.getElementById('menu-btn');
-
-  menuBtn.addEventListener('click', () => {
-    menuMobile.classList.toggle('active');
-  });
-</script>
+<script src="js/menu.js"></script>
+<script src="js/carrossel.js"></script>
 <script src="js/avaliacoes.js"></script>
 
 </html>

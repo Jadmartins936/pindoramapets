@@ -8,6 +8,8 @@
 
 @import "./components/menu-superior.css";
 @import "./components/banner-central.css";
+@import "./components/carrossel.css";
+@import "./components/quemsomos.css";
 @import "./components/avaliacoes.css";
 @import "./components/profissionais.css";
 @import "./components/contato.css";

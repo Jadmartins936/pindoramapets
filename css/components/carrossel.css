@@ -1,0 +1,82 @@
+.carousel {
+    position: relative;
+    width: 80%;        /* largura do carrossel */
+    max-width: 800px;  /* limite máximo */
+    overflow: hidden;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .slide {
+    min-width: 100%;
+    user-select: none;
+  }
+
+  .slide img {
+    width: 100%;
+    display: block;
+  }
+
+  /* Botões de navegação */
+  .prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  color: var(--blue-1100);
+  border: none;
+  font-size: 24px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 10; /* garante que fique acima da imagem */
+  }
+
+  .prev {
+    
+    left: 0; /* dentro do contêiner */
+    transform: translate(50%, -50%); 
+  }
+
+  .next {
+    right: 0; /* dentro do contêiner */
+  transform: translate(-50%, -50%); 
+  }
+
+  /* Bolinhas */
+  .dots {
+    text-align: center;
+    padding: 10px 0;
+    background: transparent;
+  }
+
+  .dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .dot.active {
+    background-color: rgba(107, 183, 203, 1);
+  }
+
+  .carousel {
+  display: none;
+}
+
+/* Mostrar somente em telas maiores que 900px */
+@media (min-width: 900px) {
+  .carousel {
+    display: block;
+  }
+}
